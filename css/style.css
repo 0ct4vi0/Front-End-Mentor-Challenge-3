@@ -74,7 +74,7 @@ body {
 }
 
 .trasfondo {
-  background-color: hsl(30, 38%, 92%);
+  background-color: pink;
 }
 .trasfondo #cuerpo {
   margin: 2em 1em 1em 1em;
@@ -101,26 +101,34 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 .trasfondo #cuerpo .numbers {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(2, 160px);
-  margin: 1em;
 }
 .trasfondo #cuerpo .numbers .n-1 {
-  font-size: 27px;
-  margin: 1em;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin: 0.7em;
 }
-.trasfondo #cuerpo a {
+.trasfondo #cuerpo .btn {
   background-color: hsl(158, 36%, 37%);
   color: white;
-  font-size: 20px;
-  margin: auto;
-  width: 14em;
+  display: inline-block;
   text-align: center;
-  padding: 0.8em;
-  border-radius: 9.5%;
+  width: 300px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 0px 28px 28px;
+  padding: 10px 0px;
+  border-radius: 7%;
+  cursor: pointer;
 }
-.trasfondo #cuerpo a:hover {
+.trasfondo #cuerpo .btn img {
+  display: inline-block;
+  margin-right: 6px;
+  width: 1em;
+}
+.trasfondo #cuerpo .btn:hover {
   font-size: 300;
   background-color: hsl(157, 28%, 18%);
 }
