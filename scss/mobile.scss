@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 .trasfondo{
     // background-color:  hsl(30, 38%, 92%);
     background-color: pink;
@@ -6,31 +8,67 @@
         margin: 2em 1em 1em  1em;
         border-radius: 3%;
         background-color: white;
-        
         font-weight: 14px;
         // text-align: center;
+     
+        @include mb {
+            margin: 5em 24em ;
+            width: 600px;
+            height: 460px;
+      }
 
-        img{
+    //   IMAGEN--------------------------
+        .image{
             border-top-left-radius: 3%;
             border-top-right-radius: 3%;
+
+            @include mb {
+                position: absolute;
+                padding: 0%;
+                width: 300px;
+                height: 460px;
+                border-bottom-left-radius: 3%;
+            }
         }
+// --------------------------------------------------
 
         h2{
             font-family:'Courier New', Courier, monospace;
-            margin:1em;
+            font-size: 17px;
+            margin:1em 0em 0.5em 1.5em;
+
+            @include mb{
+                margin-left: 18em;
+                padding: 2em 0em 0em ;
+                font-size: 18px;
+            }
         }
 
         h1{
                         
             font-size: 2.4em;
             font-weight: 700;
-            margin:  0em 0em 0.5em 1em;
+            margin:  0em 0em 0.5em 0.5em;
             color: black;
+
+            @include mb {
+                margin: 0em 8.4em 0.3em;
+                font-size: 2.2;
+                // background-color: red;
+                width: 250px;
+            }
+            
         }
 
         p{
-            margin:0em 0em 1em 1em;
+            margin:0em 0em 0em 1.6em;
             font-family:'Courier New', Courier, monospace;
+            
+            @include mb{
+                // background-color: red;
+                width: 250px;
+                margin-left: 20.3em;
+            }
         }
 
         .numbers{
@@ -44,7 +82,17 @@
                 margin: 0.7em;
             }
 
+            .n-2{
+                margin: 0em;
 
+                @include mb{
+                    width: 130px;
+                }
+            }
+
+            @include mb{
+                margin-left: 19em;
+            }
         }
               
         .btn{
@@ -60,10 +108,15 @@
             border-radius: 7%;
             cursor: pointer;
                 
-                img{
+                .ico{
                     display: inline-block;
                     margin-right:6px ;
                     width: 1em;
+                }
+
+                @include mb{
+                    margin-left: 16.4em;
+                    width: 250px;
                 }
         }
         .btn:hover{
